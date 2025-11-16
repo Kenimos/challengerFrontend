@@ -1,8 +1,12 @@
 @import "tailwindcss";
-:root {
-
+html,
+body,
+#root {
+  height: 100%;
 }
 
-body {
-  background-color: #ffffff;
+.app-root {
+  min-height: 100%;
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-top: env(safe-area-inset-top);
 }
